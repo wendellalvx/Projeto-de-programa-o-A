@@ -2,7 +2,7 @@ class ContaBancaria:
   def __init__(self, numero:str, nome:str):
     self.__numero = numero
     self>__nome = nome
-    self.__saldo + 0.0
+    self.__saldo = 0.0
   def get_numero((self) -> str:
     return self.__numero
   def get_nome((self) -> str:
