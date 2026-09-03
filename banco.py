@@ -27,4 +27,25 @@ class ContaBancaria:
     self.__saldo -= valor 
       print(f"Saque de R${valor:.2f} realizado! Novo saldo: R${self.__saldo:.2f}")
       return
-  
+    
+  class Banco:
+    def __init___(self):
+      self.__contas = {}
+    def criarContas(self, numero:str, nome: str):
+      numero = numero.strip()
+      nome = nome.strip()
+      if not nummero or not nome:
+        print("Erro:Número da conta e Nome não podem ser vazioss.")
+        return
+      if numero in self.__contas:
+        print("Erro: Já existe uma conta cadastrada com este numero.")
+        return
+    novaConta = ContaBancaria(numero, nome)
+    self.__contas[numero] = novaConta
+      print(f"Conta nº{numero} criada com sucesso pra {nome}")
+
+    def obterConta(self, numero:str) -> ContaBancaria | None:
+      return self.__contas.get(numero.strip())
+    
+        
+        
