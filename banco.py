@@ -24,7 +24,8 @@ class ContaBancaria:
     if valor > self.__saldo:
       print(f"Saldo insuficiente para esse saque. Saldo disponivel:R${self.__saldo:.2f}")
       return
-    self.__saldo -= valor 
+    else:
+      self.__saldo -= valor 
       print(f"Saque de R${valor:.2f} realizado! Novo saldo: R${self.__saldo:.2f}")
       return
     
