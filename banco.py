@@ -1,7 +1,7 @@
 class ContaBancaria:
   def __init__(self, numero:str, nome:str):
     self.__numero = numero
-    self>__nome = nome
+    self.__nome = nome
     self.__saldo = 0.0
   def get_numero((self) -> str:
     return self.__numero
@@ -44,8 +44,5 @@ class ContaBancaria:
     self.__contas[numero] = novaConta
       print(f"Conta nº{numero} criada com sucesso pra {nome}")
 
-    def obterConta(self, numero:str) -> ContaBancaria | None:
-      return self.__contas.get(numero.strip())
-    
         
         
